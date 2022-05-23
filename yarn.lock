@@ -1733,7 +1733,7 @@
     react-docgen-typescript "^2.1.1"
     tslib "^2.0.0"
 
-"@storybook/react@^6.4.19":
+"@storybook/react@*", "@storybook/react@^6.5.4":
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.5.4.tgz#54d947c79ed60aef8ae160332d5bce2e4281f40f"
   integrity sha512-tZdoUc0TJ2HrE4iIHwNWjW/yJSM8+9uBE4U4rWmKjjqRk7jC0KGLxjPPgjGsJFx7iSdAurQlaZUW7cvcPuhz1w==
@@ -2017,6 +2017,13 @@
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@types/source-list-map/-/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
   integrity sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==
+
+"@types/storybook__react@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@types/storybook__react/-/storybook__react-5.2.1.tgz#b5fd1612f2e5846b2f441725ea946bafd7ab9edb"
+  integrity sha512-p4QGO+VjEO3YxyWVHpPylNheA0JhStzoCg6RBTmdobrC0ZqLPEIIWu0pFkHlNkmGIiEKW2yDGFJooBe8M4Df0Q==
+  dependencies:
+    "@storybook/react" "*"
 
 "@types/tapable@^1", "@types/tapable@^1.0.5":
   version "1.0.8"

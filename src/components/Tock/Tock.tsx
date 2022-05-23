@@ -6,14 +6,7 @@ export const Tock = (_props: TockProps) => {
   const onClick = () => {
     setCount((count) => count - 1);
   };
-  return React.createElement(
-    "button",
-    {
-      onClick,
-    },
-    count.toString()
-  );
-  // return  <button onClick={onClick}>{count}</button>
+  return <button onClick={onClick}>{count}</button>;
 };
 
 Tock.displayname = "Tock";
