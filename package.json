@@ -1,0 +1,43 @@
+{
+  "name": "tick-tick",
+  "version": "0.1.0",
+  "description": "Simple React component library",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonbri/tick-tick.git"
+  },
+  "private": false,
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "format": "prettier --write .",
+    "build": "rm -rf dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./bin/fixup"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@storybook/react": "^6.4.19",
+    "@types/react": "^17.0.39",
+    "babel-loader": "^8.2.4",
+    "prettier": "^2.6.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
+  },
+  "dependencies": {}
+}

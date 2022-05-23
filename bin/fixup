@@ -1,0 +1,17 @@
+#!/bin/sh
+
+DIST=./dist
+CJS=$DIST/cjs
+MJS=$DIST/mjs
+
+cat >$CJS/package.json <<!EOF
+{
+    "type": "commonjs"
+}
+!EOF
+
+cat >$MJS/package.json <<!EOF
+{
+    "type": "module"
+}
+!EOF
